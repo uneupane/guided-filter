@@ -1,9 +1,3 @@
-/**************************************
- * Zeyun Yu (yuz@uwm.edu)             *
- * Department of Computer Science     *
- * University of Wisconsin-Milwaukee  *
- **************************************/
-
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -104,47 +98,5 @@ void WritePGM(int rows, int cols, unsigned char *image,
       fputc(result[j*cols+i], fp);
   	 // printf("%u",result);
   fclose(fp);
-  
 
-
-  /* write to a PPM image 
-  fprintf(fp, "P6\n%d %d\n%d\n", cols, rows, 255);
-  
-  for (j=0; j<rows; j++)  
-    for (i=0; i<cols; i++) {
-      if (result[j*cols+i] == 1) {
-	fputc(255, fp);
-	fputc(0, fp);
-	fputc(0, fp);
-      }
-      else if (result[j*cols+i] == 2) {
-	fputc(0, fp);
-	fputc(255, fp);
-	fputc(0, fp);
-      }
-      else if (result[j*cols+i] == 3) {
-	fputc(0, fp);
-	fputc(0, fp);
-	fputc(255, fp);
-      }
-      else if (result[j*cols+i] == 4) {
-	fputc(255, fp);
-	fputc(255, fp);
-	fputc(0, fp);
-      }
-      else if (result[j*cols+i] == 5) {
-	fputc(255, fp);
-	fputc(0, fp);
-	fputc(255, fp);
-      }
-      else {
-	fputc(image[j*cols+i], fp);
-	fputc(image[j*cols+i], fp);
-	fputc(image[j*cols+i], fp);
-      }
-    }
-
-  fclose(fp);
-  */
-  
 }
