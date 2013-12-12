@@ -1,8 +1,3 @@
-/**************************************
- * Zeyun Yu (yuz@uwm.edu)             *
- * Department of Computer Science     *
- * University of Wisconsin-Milwaukee  *
- **************************************/
 
 /* Guided Image Filtering by by Kaiming He, Jian Sun, and Xiaoou Tang, in ECCV 2010 (Oral)
 
